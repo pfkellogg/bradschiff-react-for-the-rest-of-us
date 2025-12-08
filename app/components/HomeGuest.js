@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
-import Page from './Page'
-import Axios from 'axios'
+import React, { useState } from "react"
+import Page from "./Page"
+import Axios from "axios"
 
 function HomeGuest() {
-  const [username, setUserName] = useState()
+  const [username, setUsername] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
 
   async function handleSubmit(e) {
     e.preventDefault()
     try {
-      await Axios.post('http://localhost:8080/register', { username, email, password })
-      console.log('User was successfully created.')
+      await Axios.post("/register", { username, email, password })
+      console.log("User was successfully created.")
     } catch (e) {
-      console.log('There was an error.')
+      console.log("There was an error.")
     }
   }
 
@@ -30,7 +30,7 @@ function HomeGuest() {
               <label htmlFor="username-register" className="text-muted mb-1">
                 <small>Username</small>
               </label>
-              <input onChange={e => setUserName(e.target.value)} id="username-register" name="username" className="form-control" type="text" placeholder="Pick a username" autoComplete="off" />
+              <input onChange={e => setUsername(e.target.value)} id="username-register" name="username" className="form-control" type="text" placeholder="Pick a username" autoComplete="off" />
             </div>
             <div className="form-group">
               <label htmlFor="email-register" className="text-muted mb-1">

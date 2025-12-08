@@ -1,5 +1,5 @@
 body {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 .header-bar {
@@ -142,9 +142,7 @@ body {
 .liveValidateMessage-enter-active {
   opacity: 1;
   transform: translateY(0);
-  transition:
-    0.33s opacity ease-in-out,
-    0.33s transform ease-in-out;
+  transition: 0.33s opacity ease-in-out, 0.33s transform ease-in-out;
 }
 
 .liveValidateMessage-exit {
@@ -155,9 +153,7 @@ body {
 .liveValidateMessage-exit-active {
   opacity: 0;
   transform: translateY(100%);
-  transition:
-    0.33s opacity ease-in-out,
-    0.33s transform ease-in-out;
+  transition: 0.33s opacity ease-in-out, 0.33s transform ease-in-out;
 }
 
 .form-group input,
@@ -205,10 +201,7 @@ textarea.tall-textarea {
 .search-overlay-enter-active {
   opacity: 1;
   transform: scale(1);
-  transition:
-    0.33s visibility ease-in-out,
-    0.33s opacity ease-in-out,
-    0.33s transform ease-in-out;
+  transition: 0.33s visibility ease-in-out, 0.33s opacity ease-in-out, 0.33s transform ease-in-out;
 }
 
 .search-overlay-exit {
@@ -219,10 +212,7 @@ textarea.tall-textarea {
 .search-overlay-exit-active {
   opacity: 0;
   transform: scale(1.3);
-  transition:
-    0.33s visibility ease-in-out,
-    0.33s opacity ease-in-out,
-    0.33s transform ease-in-out;
+  transition: 0.33s visibility ease-in-out, 0.33s opacity ease-in-out, 0.33s transform ease-in-out;
 }
 
 .search-overlay-icon {
@@ -310,9 +300,7 @@ textarea.tall-textarea {
 
 .circle-loader {
   opacity: 0;
-  transition:
-    opacity 0.45s ease-out,
-    visibility 0.45s ease-out;
+  transition: opacity 0.45s ease-out, visibility 0.45s ease-out;
   visibility: hidden;
   position: absolute;
   left: 50%;
@@ -349,9 +337,7 @@ textarea.tall-textarea {
   flex-direction: column;
   opacity: 0;
   transform: translateY(100%);
-  transition:
-    0.33s opacity ease-in-out,
-    0.33s transform ease-in-out;
+  transition: 0.33s opacity ease-in-out, 0.33s transform ease-in-out;
 }
 
 .chat-wrapper--is-visible {
@@ -534,7 +520,7 @@ textarea.tall-textarea {
 
 .dots-loading::before,
 .dots-loading::after {
-  content: ' ';
+  content: " ";
 }
 
 .dots-loading div,

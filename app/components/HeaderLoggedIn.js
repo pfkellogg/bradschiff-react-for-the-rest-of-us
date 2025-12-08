@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react"
+import { Link } from "react-router-dom"
 
 function HeaderLoggedIn(props) {
   function handleLogout() {
-    localStorage.removeItem('complexappToken')
-    localStorage.removeItem('complexappUsername')
-    localStorage.removeItem('complexappAvatar')
     props.setLoggedIn(false)
+    localStorage.removeItem("complexappToken")
+    localStorage.removeItem("complexappUsername")
+    localStorage.removeItem("complexappAvatar")
   }
 
   return (
@@ -18,11 +19,11 @@ function HeaderLoggedIn(props) {
         <span className="chat-count-badge text-white"> </span>
       </span>
       <a href="#" className="mr-2">
-        <img className="small-header-avatar" src={localStorage.getItem('complexappAvatar')} />
+        <img className="small-header-avatar" src={localStorage.getItem("complexappAvatar")} />
       </a>
-      <a className="btn btn-sm btn-success mr-2" href="/create-post">
+      <Link className="btn btn-sm btn-success mr-2" to="/create-post">
         Create Post
-      </a>
+      </Link>
       <button onClick={handleLogout} className="btn btn-sm btn-secondary">
         Sign Out
       </button>
