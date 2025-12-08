@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import HeaderLoggedOut from "./HeaderLoggedOut"
-import HeaderLoggedIn from "./HeaderLoggedIn"
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import HeaderLoggedOut from './HeaderLoggedOut'
+import HeaderLoggedIn from './HeaderLoggedIn'
 
 function Header(props) {
   return (
@@ -12,7 +12,7 @@ function Header(props) {
             ComplexApp
           </Link>
         </h4>
-        {props.loggedIn ? <HeaderLoggedIn setLoggedIn={props.setLoggedIn} /> : <HeaderLoggedOut setLoggedIn={props.setLoggedIn} />}
+        {props.loggedIn ? <HeaderLoggedIn /> : <HeaderLoggedOut />}
       </div>
     </header>
   )
